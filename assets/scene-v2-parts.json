@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "encoding": "motion-delta-shuffle-v1",
+  "compression": "gzip",
+  "decoded_bytes": 134212932,
+  "decoded_sha256": "9a38ad68a34a0bf450b7921f36ad315ff736e01ea0861ab936f2746ac93a8546",
+  "bytes": 36424445,
+  "sha256": "78e74d51861f82a925b3855e382e16bda64c144d2ac27c2f8ff3b8616a2a9fbc",
+  "part_bytes": 33554432,
+  "parts": [
+    {
+      "path": "scene-v2-parts/part-000.bin",
+      "bytes": 33554432,
+      "sha256": "d084162de0757d531e7e4f4da0be2a488ae9bb99d78b70259b584e905cb83e37"
+    },
+    {
+      "path": "scene-v2-parts/part-001.bin",
+      "bytes": 2870013,
+      "sha256": "bae2af3c40f3ccc79aadaa14f03e87dfec45884632ac6aa1c37301880d7ad9d7"
+    }
+  ]
+}

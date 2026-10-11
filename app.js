@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import {applyFacade,applyFloor} from './facades.js?v=4';
 import {sampleCamera} from './animation.js';
+import {loadScenePayload} from './scene-loader.js';
 import {OrbitControls} from './vendor/OrbitControls.js';
 const $=s=>document.querySelector(s),viewport=$('#viewport'),ref=$('#reference'),rendered=$('#rendered'),videos=[ref,rendered];
 let cameraFrames;
@@ -57,58 +58,13 @@ function seek(t){time=Math.max(0,Math.min(data?.duration||16,t));videos.forEach(
 async function setPlaying(value){playing=value;$('#play').dataset.playing=String(playing);$('#play').setAttribute('aria-label',playing?'Pause animation':'Play animation');if(playing){if(time>data.duration-.06)seek(0);for(const v of videos){v.playbackRate=speed;try{await v.play()}catch{}}}else videos.forEach(v=>v.pause());lastTick=performance.now();}
 $('#play').onclick=()=>ready&&setPlaying(!playing);$('#scrub').oninput=e=>seek(Number(e.target.value));$('#speed').onchange=e=>{speed=Number(e.target.value);videos.forEach(v=>v.playbackRate=speed)};$('#reset').onclick=()=>resetView();$('#overview').onclick=()=>resetView();$('#neo').onclick=()=>resetView(true);document.querySelectorAll('[data-path-mode]').forEach(button=>button.onclick=()=>{pathMode=button.dataset.pathMode;document.querySelectorAll('[data-path-mode]').forEach(b=>{b.classList.toggle('selected',b===button);b.setAttribute('aria-pressed',String(b===button));});updatePathVisibility();});document.addEventListener('keydown',e=>{if(['INPUT','SELECT','BUTTON'].includes(document.activeElement.tagName))return;if(e.code==='Space'){e.preventDefault();if(ready)setPlaying(!playing)}if(e.code==='ArrowRight')seek(time+.2);if(e.code==='ArrowLeft')seek(time-.2)});
 for(const v of videos)v.addEventListener('loadedmetadata',()=>{v.currentTime=time});
-async function loadScenePayload(){
- const manifestURL=new URL('assets/scene-parts.json',document.baseURI);
- const response=await fetch(manifestURL);
- if(!response.ok)throw new Error(`Scene manifest request failed (${response.status})`);
- const manifest=await response.json();
- if(manifest.version!==1||manifest.compression!=='gzip'||!Array.isArray(manifest.parts)||!manifest.parts.length||!Number.isSafeInteger(manifest.bytes)||manifest.bytes<=0)throw new Error('Invalid scene manifest');
- let expectedBytes=0;
- for(const part of manifest.parts){
-  if(typeof part.path!=='string'||!part.path||!Number.isSafeInteger(part.bytes)||part.bytes<=0)throw new Error('Invalid scene part');
-  expectedBytes+=part.bytes;
- }
- if(!Number.isSafeInteger(expectedBytes)||expectedBytes!==manifest.bytes)throw new Error('Scene manifest byte count does not match its parts');
- let partIndex=0,partBytes=0,reader=null,cancelled=false;
- const abort=new AbortController();
- async function cancelReader(reason){const activeReader=reader;reader=null;if(activeReader){try{await activeReader.cancel(reason)}finally{activeReader.releaseLock()}}}
- // Forward one network chunk at a time, preserving backpressure across parts.
- const compressed=new ReadableStream({
-  async pull(controller){
-   try{
-    while(!cancelled){
-     if(!reader){
-      if(partIndex===manifest.parts.length){controller.close();return;}
-      const part=manifest.parts[partIndex];
-      const partResponse=await fetch(new URL(part.path,manifestURL),{signal:abort.signal});
-      if(cancelled){await partResponse.body?.cancel();return;}
-      if(!partResponse.ok)throw new Error(`Scene part ${partIndex+1} request failed (${partResponse.status})`);
-      if(!partResponse.body)throw new Error(`Scene part ${partIndex+1} has no response body`);
-      reader=partResponse.body.getReader();partBytes=0;
-     }
-     const {value,done}=await reader.read();
-     if(cancelled)return;
-     if(done){
-      reader.releaseLock();reader=null;
-      if(partBytes!==manifest.parts[partIndex].bytes)throw new Error(`Scene part ${partIndex+1} is incomplete`);
-      partIndex++;continue;
-     }
-     partBytes+=value.byteLength;
-     if(partBytes>manifest.parts[partIndex].bytes)throw new Error(`Scene part ${partIndex+1} exceeds its expected size`);
-     controller.enqueue(value);return;
-    }
-   }catch(error){
-    if(cancelled)return;
-    cancelled=true;abort.abort();await cancelReader(error).catch(()=>{});controller.error(error);
-   }
-  },
-  async cancel(reason){cancelled=true;abort.abort();await cancelReader(reason);}
- });
- try{return await new Response(compressed.pipeThrough(new DecompressionStream('gzip'))).arrayBuffer();}
- catch(error){if(error.message)throw error;throw new Error('Scene payload could not be decompressed',{cause:error});}
-}
 async function load(){data=await(await fetch('assets/scene.json')).json();$('#duration').textContent=`/ ${data.duration.toFixed(2)} s`;$('#scrub').max=data.duration;
- $('#load-detail').textContent='Loading simplified geometry and animation…';buffer=await loadScenePayload();
+ buffer=await loadScenePayload(data,{onProgress:({phase,fraction})=>{
+  const percent=Math.floor(fraction*100);
+  $('#load-detail').textContent=phase==='download'?`Downloading scene… ${percent}%`:`Restoring animation… ${percent}%`;
+ }});
+ $('#load-detail').textContent='Preparing the scene…';
+ await new Promise(resolve=>requestAnimationFrame(()=>setTimeout(resolve,0)));
  const [facadeData,floorData,denseCameras]=await Promise.all(['assets/facades.json?v=3','assets/floor.json','assets/cameras.json'].map(async url=>(await fetch(url)).json()));cameraFrames=denseCameras;
  const mats=data.materials.map(m=>new THREE.MeshStandardMaterial({color:new THREE.Color(...m.color.slice(0,3)),roughness:Math.max(.25,m.roughness),metalness:m.metalness,side:THREE.DoubleSide,emissive:new THREE.Color(...m.emission),transparent:m.color[3]<.99,opacity:m.color[3]}));
  mats.forEach((m,i)=>{const p=facadeData[data.materials[i].name];if(p)applyFacade(m,p);if(data.materials[i].name==='roof_floor')applyFloor(m,floorData);});
@@ -124,7 +80,7 @@ async function load(){data=await(await fetch('assets/scene.json')).json();$('#du
   const btn=document.createElement('button');btn.className='shot';btn.innerHTML=`<img src="assets/shot${i+1}.jpg" alt="Reference shot ${i+1}"><div><span>Shot ${String(i+1).padStart(2,'0')}</span><small>${shot.time.toFixed(2)} s</small></div>`;btn.onclick=()=>seek(shot.time+.04);$('#shots').append(btn);const tick=document.createElement('i');tick.style.left=`${shot.time/data.duration*100}%`;$('#cut-markers').append(tick);});
  ready=true;$('#loading').remove();seek(time);window.cineRecon={seek,play:()=>setPlaying(true),pause:()=>setPlaying(false),getState:()=>({time,playing,shot:$('#shot-label').textContent,objects:meshes.length,samples:data.frames.length})};
 }
-load().catch(e=>{console.error(e);$('#load-detail').textContent=`Could not load the scene: ${e.message}`});
+load().catch(e=>{console.error(e);$('#load-detail').textContent=`Could not load the scene: ${e.message||'Please reload and try again.'}`});
 function animate(now){requestAnimationFrame(animate);const dt=Math.min((now-lastTick)/1000,.1);lastTick=now;if(ready&&playing){time=ref.readyState>=2&&!ref.paused?ref.currentTime:time+dt*speed;if(time>=data.duration-.015){time=data.duration;setPlaying(false)}if(Math.abs(rendered.currentTime-time)>.16&&!rendered.seeking)rendered.currentTime=time;updateUI();}if(ready)updateScene();controls.update();const w=viewport.clientWidth,h=viewport.clientHeight;renderer.setScissorTest(false);renderer.setViewport(0,0,w,h);renderer.clear();renderer.render(scene,camera);}requestAnimationFrame(animate);
 
 if(document.modelContext?.registerTool){try{document.modelContext.registerTool({name:'set_scene_time',description:'Pause and inspect the reconstruction at a time in seconds.',inputSchema:{type:'object',properties:{seconds:{type:'number',minimum:0,maximum:16}},required:['seconds'],additionalProperties:false},execute:async input=>{if(!ready)throw Error('Scene is loading');if(typeof input.seconds!=='number'||!Number.isFinite(input.seconds)||input.seconds<0||input.seconds>data.duration)throw Error('Time outside the video');await setPlaying(false);seek(input.seconds);return {time,shot:$('#shot-label').textContent};}})}catch(e){console.warn('Optional scene tool unavailable',e)}}

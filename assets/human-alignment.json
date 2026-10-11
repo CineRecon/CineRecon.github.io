@@ -1,0 +1,78 @@
+{
+  "spearman": 0.951048951048951,
+  "pearson": 0.9747544172510438,
+  "models": [
+    {
+      "id": "opus55",
+      "name": "Opus 5.5",
+      "human": 93.78946876169098,
+      "automatic": 89.13279621612955
+    },
+    {
+      "id": "gpt6",
+      "name": "GPT-6 Astra",
+      "human": 87.71877846698636,
+      "automatic": 74.16094956417537
+    },
+    {
+      "id": "kimik3",
+      "name": "Kimi K3",
+      "human": 60.123524623524624,
+      "automatic": 58.1220775109664
+    },
+    {
+      "id": "deepseek41flash",
+      "name": "DeepSeek-V4.1-Flash",
+      "human": 62.08746969616536,
+      "automatic": 52.47783617348835
+    },
+    {
+      "id": "grok46",
+      "name": "Grok 4.6",
+      "human": 46.265785878104715,
+      "automatic": 52.52875778721189
+    },
+    {
+      "id": "glm53flash",
+      "name": "GLM-5.3-Flash",
+      "human": 43.06354515050167,
+      "automatic": 50.6438127090301
+    },
+    {
+      "id": "qwen38max",
+      "name": "Qwen3.8-Max",
+      "human": 45.02545401458445,
+      "automatic": 45.05709105709106
+    },
+    {
+      "id": "opus48",
+      "name": "Opus 4.8",
+      "human": 32.788416807740475,
+      "automatic": 33.433709071390226
+    },
+    {
+      "id": "qwen38flash",
+      "name": "Qwen3.8-Flash",
+      "human": 37.15702829108626,
+      "automatic": 37.09415597821395
+    },
+    {
+      "id": "gpt56",
+      "name": "GPT-5.6 Sol",
+      "human": 24.481413648080316,
+      "automatic": 32.01682268348935
+    },
+    {
+      "id": "gemini31",
+      "name": "Gemini 3.1 Pro",
+      "human": 11.742319354892453,
+      "automatic": 18.8586536378934
+    },
+    {
+      "id": "gemini38flash",
+      "name": "Gemini 3.8 Flash",
+      "human": 50.617283950617285,
+      "automatic": 52.88065843621399
+    }
+  ]
+}

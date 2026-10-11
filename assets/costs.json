@@ -1,0 +1,80 @@
+[
+  {
+    "model": "gpt6",
+    "name": "GPT-6 Astra",
+    "cost": 10.08,
+    "score": 63.782941157650825
+  },
+  {
+    "model": "gpt56",
+    "name": "GPT-5.6 Sol",
+    "cost": 1.07,
+    "score": 35.91689932080225
+  },
+  {
+    "model": "opus48",
+    "name": "Opus 4.8",
+    "cost": 8.969922738333334,
+    "score": 40.29228474840325
+  },
+  {
+    "model": "glm53flash",
+    "name": "GLM-5.3-Flash",
+    "cost": 1.0123608192,
+    "score": 47.63294610719455
+  },
+  {
+    "model": "qwen38flash",
+    "name": "Qwen3.8-Flash",
+    "cost": 2.4046170462489607,
+    "score": 39.253910440528124
+  },
+  {
+    "model": "qwen38max",
+    "name": "Qwen3.8-Max",
+    "cost": 22.27692579893093,
+    "score": 45.20710283648389
+  },
+  {
+    "model": "deepseek41flash",
+    "name": "DeepSeek-V4.1-Flash",
+    "cost": 0.38846070537,
+    "score": 49.487738747552555
+  },
+  {
+    "model": "kimik3",
+    "name": "Kimi K3",
+    "cost": 11.419561585289117,
+    "score": 52.4307552379759
+  },
+  {
+    "model": "grok46",
+    "name": "Grok 4.6",
+    "cost": 7.678304533333333,
+    "score": 49.021895896718796
+  },
+  {
+    "model": "gemini31",
+    "name": "Gemini 3.1 Pro",
+    "cost": 2.452432835,
+    "score": 20.072772902538333
+  },
+  {
+    "model": "opus55",
+    "name": "Opus 5.5",
+    "cost": 20.726360835537417,
+    "score": 76.6058467580931
+  },
+  {
+    "model": "gemini38_flash",
+    "name": "Gemini 3.8 Flash",
+    "cost": 2.94,
+    "score": 47.082758981490855
+  },
+  {
+    "model": "opus55_low",
+    "name": "Opus 5.5 (Low)",
+    "cost": 1.6286935299444445,
+    "score": 49.54234568906464
+  }
+]

@@ -1,0 +1,491 @@
+{
+  "models": {
+    "opus55": "Opus 5.5",
+    "gpt6": "GPT-6 Astra",
+    "kimik3": "Kimi K3",
+    "deepseek41flash": "DeepSeek-V4.1-Flash",
+    "grok46": "Grok 4.6",
+    "glm53flash": "GLM-5.3-Flash",
+    "gemini38_flash": "Gemini 3.8 Flash",
+    "qwen38max": "Qwen3.8-Max",
+    "opus48": "Opus 4.8",
+    "qwen38flash": "Qwen3.8-Flash",
+    "gpt56": "GPT-5.6 Sol",
+    "gemini31": "Gemini 3.1 Pro"
+  },
+  "cases": [
+    {
+      "id": "1",
+      "title": "The Matrix",
+      "reference": "assets/showcase/video1_ref.mp4",
+      "thumbnail": "assets/showcase/video1.jpg",
+      "videos": {
+        "opus55": {
+          "L1": "assets/showcase/video1_opus55_L1.mp4",
+          "L2": "assets/showcase/video1_opus55_L2.mp4",
+          "L3": "assets/showcase/video1_opus55_L3.mp4"
+        },
+        "gpt6": {
+          "L1": "assets/showcase/video1_gpt6_L1.mp4",
+          "L2": "assets/showcase/video1_gpt6_L2.mp4",
+          "L3": "assets/showcase/video1_gpt6_L3.mp4"
+        },
+        "kimik3": {
+          "L1": "assets/showcase/video1_kimik3_L1.mp4",
+          "L2": "assets/showcase/video1_kimik3_L2.mp4",
+          "L3": "assets/showcase/video1_kimik3_L3.mp4"
+        },
+        "deepseek41flash": {
+          "L1": "assets/showcase/video1_deepseek41flash_L1.mp4",
+          "L2": "assets/showcase/video1_deepseek41flash_L2.mp4",
+          "L3": "assets/showcase/video1_deepseek41flash_L3.mp4"
+        },
+        "grok46": {
+          "L1": "assets/showcase/video1_grok46_L1.mp4",
+          "L2": "assets/showcase/video1_grok46_L2.mp4",
+          "L3": "assets/showcase/video1_grok46_L3.mp4"
+        },
+        "glm53flash": {
+          "L1": "assets/showcase/video1_glm53flash_L1.mp4",
+          "L2": "assets/showcase/video1_glm53flash_L2.mp4",
+          "L3": "assets/showcase/video1_glm53flash_L3.mp4"
+        },
+        "gemini38_flash": {
+          "L1": "assets/showcase/video1_gemini38_flash_L1.mp4",
+          "L2": "assets/showcase/video1_gemini38_flash_L2.mp4",
+          "L3": "assets/showcase/video1_gemini38_flash_L3.mp4"
+        },
+        "qwen38max": {
+          "L1": "assets/showcase/video1_qwen38max_L1.mp4",
+          "L2": "assets/showcase/video1_qwen38max_L2.mp4",
+          "L3": "assets/showcase/video1_qwen38max_L3.mp4"
+        },
+        "opus48": {
+          "L1": "assets/showcase/video1_opus48_L1.mp4",
+          "L2": "assets/showcase/video1_opus48_L2.mp4",
+          "L3": "assets/showcase/video1_opus48_L3.mp4"
+        },
+        "qwen38flash": {
+          "L1": "assets/showcase/video1_qwen38flash_L1.mp4",
+          "L2": "assets/showcase/video1_qwen38flash_L2.mp4",
+          "L3": "assets/showcase/video1_qwen38flash_L3.mp4"
+        },
+        "gpt56": {
+          "L1": "assets/showcase/video1_gpt56_L1.mp4",
+          "L2": "assets/showcase/video1_gpt56_L2.mp4",
+          "L3": "assets/showcase/video1_gpt56_L3.mp4"
+        },
+        "gemini31": {
+          "L1": "assets/showcase/video1_gemini31_L1.mp4",
+          "L2": "assets/showcase/video1_gemini31_L2.mp4",
+          "L3": "assets/showcase/video1_gemini31_L3.mp4"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "title": "FPV flight",
+      "reference": "assets/showcase/video11_ref.mp4",
+      "thumbnail": "assets/showcase/video11.jpg",
+      "videos": {
+        "opus55": {
+          "L1": "assets/showcase/video11_opus55_L1.mp4",
+          "L2": "assets/showcase/video11_opus55_L2.mp4",
+          "L3": "assets/showcase/video11_opus55_L3.mp4"
+        },
+        "gpt6": {
+          "L1": "assets/showcase/video11_gpt6_L1.mp4",
+          "L2": "assets/showcase/video11_gpt6_L2.mp4",
+          "L3": "assets/showcase/video11_gpt6_L3.mp4"
+        },
+        "kimik3": {
+          "L1": "assets/showcase/video11_kimik3_L1.mp4",
+          "L2": "assets/showcase/video11_kimik3_L2.mp4",
+          "L3": "assets/showcase/video11_kimik3_L3.mp4"
+        },
+        "deepseek41flash": {
+          "L1": "assets/showcase/video11_deepseek41flash_L1.mp4",
+          "L2": "assets/showcase/video11_deepseek41flash_L2.mp4",
+          "L3": "assets/showcase/video11_deepseek41flash_L3.mp4"
+        },
+        "grok46": {
+          "L1": "assets/showcase/video11_grok46_L1.mp4",
+          "L2": "assets/showcase/video11_grok46_L2.mp4",
+          "L3": "assets/showcase/video11_grok46_L3.mp4"
+        },
+        "glm53flash": {
+          "L1": "assets/showcase/video11_glm53flash_L1.mp4",
+          "L2": "assets/showcase/video11_glm53flash_L2.mp4",
+          "L3": "assets/showcase/video11_glm53flash_L3.mp4"
+        },
+        "gemini38_flash": {
+          "L1": "assets/showcase/video11_gemini38_flash_L1.mp4",
+          "L2": "assets/showcase/video11_gemini38_flash_L2.mp4",
+          "L3": "assets/showcase/video11_gemini38_flash_L3.mp4"
+        },
+        "qwen38max": {
+          "L1": "assets/showcase/video11_qwen38max_L1.mp4",
+          "L2": "assets/showcase/video11_qwen38max_L2.mp4",
+          "L3": "assets/showcase/video11_qwen38max_L3.mp4"
+        },
+        "opus48": {
+          "L1": "assets/showcase/video11_opus48_L1.mp4",
+          "L2": "assets/showcase/video11_opus48_L2.mp4",
+          "L3": "assets/showcase/video11_opus48_L3.mp4"
+        },
+        "qwen38flash": {
+          "L1": "assets/showcase/video11_qwen38flash_L1.mp4",
+          "L2": "assets/showcase/video11_qwen38flash_L2.mp4",
+          "L3": "assets/showcase/video11_qwen38flash_L3.mp4"
+        },
+        "gpt56": {
+          "L1": "assets/showcase/video11_gpt56_L1.mp4",
+          "L2": "assets/showcase/video11_gpt56_L2.mp4",
+          "L3": "assets/showcase/video11_gpt56_L3.mp4"
+        },
+        "gemini31": {
+          "L1": "assets/showcase/video11_gemini31_L1.mp4",
+          "L2": "assets/showcase/video11_gemini31_L2.mp4",
+          "L3": "assets/showcase/video11_gemini31_L3.mp4"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "title": "La Haine",
+      "reference": "assets/showcase/video2_ref.mp4",
+      "thumbnail": "assets/showcase/video2.jpg",
+      "videos": {
+        "opus55": {
+          "L1": "assets/showcase/video2_opus55_L1.mp4",
+          "L2": "assets/showcase/video2_opus55_L2.mp4",
+          "L3": "assets/showcase/video2_opus55_L3.mp4"
+        },
+        "gpt6": {
+          "L1": "assets/showcase/video2_gpt6_L1.mp4",
+          "L2": "assets/showcase/video2_gpt6_L2.mp4",
+          "L3": "assets/showcase/video2_gpt6_L3.mp4"
+        },
+        "kimik3": {
+          "L1": "assets/showcase/video2_kimik3_L1.mp4",
+          "L2": "assets/showcase/video2_kimik3_L2.mp4",
+          "L3": "assets/showcase/video2_kimik3_L3.mp4"
+        },
+        "deepseek41flash": {
+          "L1": "assets/showcase/video2_deepseek41flash_L1.mp4",
+          "L2": "assets/showcase/video2_deepseek41flash_L2.mp4",
+          "L3": "assets/showcase/video2_deepseek41flash_L3.mp4"
+        },
+        "grok46": {
+          "L1": "assets/showcase/video2_grok46_L1.mp4",
+          "L2": "assets/showcase/video2_grok46_L2.mp4",
+          "L3": "assets/showcase/video2_grok46_L3.mp4"
+        },
+        "glm53flash": {
+          "L1": "assets/showcase/video2_glm53flash_L1.mp4",
+          "L2": "assets/showcase/video2_glm53flash_L2.mp4",
+          "L3": "assets/showcase/video2_glm53flash_L3.mp4"
+        },
+        "gemini38_flash": {
+          "L1": "assets/showcase/video2_gemini38_flash_L1.mp4",
+          "L2": "assets/showcase/video2_gemini38_flash_L2.mp4",
+          "L3": "assets/showcase/video2_gemini38_flash_L3.mp4"
+        },
+        "qwen38max": {
+          "L1": "assets/showcase/video2_qwen38max_L1.mp4",
+          "L2": "assets/showcase/video2_qwen38max_L2.mp4",
+          "L3": "assets/showcase/video2_qwen38max_L3.mp4"
+        },
+        "opus48": {
+          "L1": "assets/showcase/video2_opus48_L1.mp4",
+          "L2": "assets/showcase/video2_opus48_L2.mp4",
+          "L3": "assets/showcase/video2_opus48_L3.mp4"
+        },
+        "qwen38flash": {
+          "L1": "assets/showcase/video2_qwen38flash_L1.mp4",
+          "L2": "assets/showcase/video2_qwen38flash_L2.mp4",
+          "L3": "assets/showcase/video2_qwen38flash_L3.mp4"
+        },
+        "gpt56": {
+          "L1": "assets/showcase/video2_gpt56_L1.mp4",
+          "L2": "assets/showcase/video2_gpt56_L2.mp4",
+          "L3": "assets/showcase/video2_gpt56_L3.mp4"
+        },
+        "gemini31": {
+          "L1": "assets/showcase/video2_gemini31_L1.mp4",
+          "L2": "assets/showcase/video2_gemini31_L2.mp4",
+          "L3": "assets/showcase/video2_gemini31_L3.mp4"
+        }
+      }
+    },
+    {
+      "id": "13",
+      "title": "Football stadium",
+      "reference": "assets/showcase/video13_ref.mp4",
+      "thumbnail": "assets/showcase/video13.jpg",
+      "videos": {
+        "opus55": {
+          "L1": "assets/showcase/video13_opus55_L1.mp4",
+          "L2": "assets/showcase/video13_opus55_L2.mp4",
+          "L3": "assets/showcase/video13_opus55_L3.mp4"
+        },
+        "gpt6": {
+          "L1": "assets/showcase/video13_gpt6_L1.mp4",
+          "L2": "assets/showcase/video13_gpt6_L2.mp4",
+          "L3": "assets/showcase/video13_gpt6_L3.mp4"
+        },
+        "kimik3": {
+          "L1": "assets/showcase/video13_kimik3_L1.mp4",
+          "L2": "assets/showcase/video13_kimik3_L2.mp4",
+          "L3": "assets/showcase/video13_kimik3_L3.mp4"
+        },
+        "deepseek41flash": {
+          "L1": "assets/showcase/video13_deepseek41flash_L1.mp4",
+          "L2": "assets/showcase/video13_deepseek41flash_L2.mp4",
+          "L3": "assets/showcase/video13_deepseek41flash_L3.mp4"
+        },
+        "grok46": {
+          "L1": "assets/showcase/video13_grok46_L1.mp4",
+          "L2": "assets/showcase/video13_grok46_L2.mp4",
+          "L3": "assets/showcase/video13_grok46_L3.mp4"
+        },
+        "glm53flash": {
+          "L1": "assets/showcase/video13_glm53flash_L1.mp4",
+          "L2": "assets/showcase/video13_glm53flash_L2.mp4",
+          "L3": "assets/showcase/video13_glm53flash_L3.mp4"
+        },
+        "gemini38_flash": {
+          "L1": "assets/showcase/video13_gemini38_flash_L1.mp4",
+          "L2": "assets/showcase/video13_gemini38_flash_L2.mp4",
+          "L3": "assets/showcase/video13_gemini38_flash_L3.mp4"
+        },
+        "qwen38max": {
+          "L1": "assets/showcase/video13_qwen38max_L1.mp4",
+          "L2": "assets/showcase/video13_qwen38max_L2.mp4",
+          "L3": "assets/showcase/video13_qwen38max_L3.mp4"
+        },
+        "opus48": {
+          "L1": "assets/showcase/video13_opus48_L1.mp4",
+          "L2": "assets/showcase/video13_opus48_L2.mp4",
+          "L3": "assets/showcase/video13_opus48_L3.mp4"
+        },
+        "qwen38flash": {
+          "L1": "assets/showcase/video13_qwen38flash_L1.mp4",
+          "L2": "assets/showcase/video13_qwen38flash_L2.mp4",
+          "L3": "assets/showcase/video13_qwen38flash_L3.mp4"
+        },
+        "gpt56": {
+          "L1": "assets/showcase/video13_gpt56_L1.mp4",
+          "L2": "assets/showcase/video13_gpt56_L2.mp4",
+          "L3": "assets/showcase/video13_gpt56_L3.mp4"
+        },
+        "gemini31": {
+          "L1": "assets/showcase/video13_gemini31_L1.mp4",
+          "L2": "assets/showcase/video13_gemini31_L2.mp4",
+          "L3": "assets/showcase/video13_gemini31_L3.mp4"
+        }
+      }
+    },
+    {
+      "id": "30",
+      "title": "F1 gameplay",
+      "reference": "assets/showcase/video30_ref.mp4",
+      "thumbnail": "assets/showcase/video30.jpg",
+      "videos": {
+        "opus55": {
+          "L1": "assets/showcase/video30_opus55_L1.mp4",
+          "L2": "assets/showcase/video30_opus55_L2.mp4",
+          "L3": "assets/showcase/video30_opus55_L3.mp4"
+        },
+        "gpt6": {
+          "L1": "assets/showcase/video30_gpt6_L1.mp4",
+          "L2": "assets/showcase/video30_gpt6_L2.mp4",
+          "L3": "assets/showcase/video30_gpt6_L3.mp4"
+        },
+        "kimik3": {
+          "L1": "assets/showcase/video30_kimik3_L1.mp4",
+          "L2": "assets/showcase/video30_kimik3_L2.mp4",
+          "L3": "assets/showcase/video30_kimik3_L3.mp4"
+        },
+        "deepseek41flash": {
+          "L1": "assets/showcase/video30_deepseek41flash_L1.mp4",
+          "L2": "assets/showcase/video30_deepseek41flash_L2.mp4",
+          "L3": "assets/showcase/video30_deepseek41flash_L3.mp4"
+        },
+        "grok46": {
+          "L1": "assets/showcase/video30_grok46_L1.mp4",
+          "L2": "assets/showcase/video30_grok46_L2.mp4",
+          "L3": "assets/showcase/video30_grok46_L3.mp4"
+        },
+        "glm53flash": {
+          "L1": "assets/showcase/video30_glm53flash_L1.mp4",
+          "L2": "assets/showcase/video30_glm53flash_L2.mp4",
+          "L3": "assets/showcase/video30_glm53flash_L3.mp4"
+        },
+        "gemini38_flash": {
+          "L1": "assets/showcase/video30_gemini38_flash_L1.mp4",
+          "L2": "assets/showcase/video30_gemini38_flash_L2.mp4",
+          "L3": "assets/showcase/video30_gemini38_flash_L3.mp4"
+        },
+        "qwen38max": {
+          "L1": "assets/showcase/video30_qwen38max_L1.mp4",
+          "L2": "assets/showcase/video30_qwen38max_L2.mp4",
+          "L3": "assets/showcase/video30_qwen38max_L3.mp4"
+        },
+        "opus48": {
+          "L1": "assets/showcase/video30_opus48_L1.mp4",
+          "L2": "assets/showcase/video30_opus48_L2.mp4",
+          "L3": "assets/showcase/video30_opus48_L3.mp4"
+        },
+        "qwen38flash": {
+          "L1": "assets/showcase/video30_qwen38flash_L1.mp4",
+          "L2": "assets/showcase/video30_qwen38flash_L2.mp4"
+        },
+        "gpt56": {
+          "L1": "assets/showcase/video30_gpt56_L1.mp4",
+          "L2": "assets/showcase/video30_gpt56_L2.mp4",
+          "L3": "assets/showcase/video30_gpt56_L3.mp4"
+        },
+        "gemini31": {
+          "L1": "assets/showcase/video30_gemini31_L1.mp4",
+          "L2": "assets/showcase/video30_gemini31_L2.mp4",
+          "L3": "assets/showcase/video30_gemini31_L3.mp4"
+        }
+      }
+    },
+    {
+      "id": "37",
+      "title": "The Shining",
+      "reference": "assets/showcase/video37_ref.mp4",
+      "thumbnail": "assets/showcase/video37.jpg",
+      "videos": {
+        "opus55": {
+          "L1": "assets/showcase/video37_opus55_L1.mp4",
+          "L2": "assets/showcase/video37_opus55_L2.mp4",
+          "L3": "assets/showcase/video37_opus55_L3.mp4"
+        },
+        "gpt6": {
+          "L1": "assets/showcase/video37_gpt6_L1.mp4",
+          "L2": "assets/showcase/video37_gpt6_L2.mp4",
+          "L3": "assets/showcase/video37_gpt6_L3.mp4"
+        },
+        "kimik3": {
+          "L1": "assets/showcase/video37_kimik3_L1.mp4",
+          "L2": "assets/showcase/video37_kimik3_L2.mp4",
+          "L3": "assets/showcase/video37_kimik3_L3.mp4"
+        },
+        "deepseek41flash": {
+          "L1": "assets/showcase/video37_deepseek41flash_L1.mp4",
+          "L2": "assets/showcase/video37_deepseek41flash_L2.mp4",
+          "L3": "assets/showcase/video37_deepseek41flash_L3.mp4"
+        },
+        "grok46": {
+          "L1": "assets/showcase/video37_grok46_L1.mp4",
+          "L2": "assets/showcase/video37_grok46_L2.mp4",
+          "L3": "assets/showcase/video37_grok46_L3.mp4"
+        },
+        "glm53flash": {
+          "L1": "assets/showcase/video37_glm53flash_L1.mp4",
+          "L2": "assets/showcase/video37_glm53flash_L2.mp4",
+          "L3": "assets/showcase/video37_glm53flash_L3.mp4"
+        },
+        "gemini38_flash": {
+          "L1": "assets/showcase/video37_gemini38_flash_L1.mp4",
+          "L2": "assets/showcase/video37_gemini38_flash_L2.mp4",
+          "L3": "assets/showcase/video37_gemini38_flash_L3.mp4"
+        },
+        "qwen38max": {
+          "L1": "assets/showcase/video37_qwen38max_L1.mp4",
+          "L2": "assets/showcase/video37_qwen38max_L2.mp4",
+          "L3": "assets/showcase/video37_qwen38max_L3.mp4"
+        },
+        "opus48": {
+          "L1": "assets/showcase/video37_opus48_L1.mp4",
+          "L2": "assets/showcase/video37_opus48_L2.mp4",
+          "L3": "assets/showcase/video37_opus48_L3.mp4"
+        },
+        "qwen38flash": {
+          "L1": "assets/showcase/video37_qwen38flash_L1.mp4",
+          "L2": "assets/showcase/video37_qwen38flash_L2.mp4",
+          "L3": "assets/showcase/video37_qwen38flash_L3.mp4"
+        },
+        "gpt56": {
+          "L1": "assets/showcase/video37_gpt56_L1.mp4",
+          "L2": "assets/showcase/video37_gpt56_L2.mp4",
+          "L3": "assets/showcase/video37_gpt56_L3.mp4"
+        },
+        "gemini31": {
+          "L1": "assets/showcase/video37_gemini31_L1.mp4"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "title": "Gravity",
+      "reference": "assets/showcase/video5_ref.mp4",
+      "thumbnail": "assets/showcase/video5.jpg",
+      "videos": {
+        "opus55": {
+          "L1": "assets/showcase/video5_opus55_L1.mp4",
+          "L2": "assets/showcase/video5_opus55_L2.mp4",
+          "L3": "assets/showcase/video5_opus55_L3.mp4"
+        },
+        "gpt6": {
+          "L1": "assets/showcase/video5_gpt6_L1.mp4",
+          "L2": "assets/showcase/video5_gpt6_L2.mp4",
+          "L3": "assets/showcase/video5_gpt6_L3.mp4"
+        },
+        "kimik3": {
+          "L1": "assets/showcase/video5_kimik3_L1.mp4",
+          "L2": "assets/showcase/video5_kimik3_L2.mp4",
+          "L3": "assets/showcase/video5_kimik3_L3.mp4"
+        },
+        "deepseek41flash": {
+          "L1": "assets/showcase/video5_deepseek41flash_L1.mp4",
+          "L2": "assets/showcase/video5_deepseek41flash_L2.mp4",
+          "L3": "assets/showcase/video5_deepseek41flash_L3.mp4"
+        },
+        "grok46": {
+          "L1": "assets/showcase/video5_grok46_L1.mp4",
+          "L2": "assets/showcase/video5_grok46_L2.mp4",
+          "L3": "assets/showcase/video5_grok46_L3.mp4"
+        },
+        "glm53flash": {
+          "L1": "assets/showcase/video5_glm53flash_L1.mp4",
+          "L2": "assets/showcase/video5_glm53flash_L2.mp4",
+          "L3": "assets/showcase/video5_glm53flash_L3.mp4"
+        },
+        "gemini38_flash": {
+          "L1": "assets/showcase/video5_gemini38_flash_L1.mp4",
+          "L2": "assets/showcase/video5_gemini38_flash_L2.mp4",
+          "L3": "assets/showcase/video5_gemini38_flash_L3.mp4"
+        },
+        "qwen38max": {
+          "L1": "assets/showcase/video5_qwen38max_L1.mp4",
+          "L2": "assets/showcase/video5_qwen38max_L2.mp4",
+          "L3": "assets/showcase/video5_qwen38max_L3.mp4"
+        },
+        "opus48": {
+          "L1": "assets/showcase/video5_opus48_L1.mp4",
+          "L2": "assets/showcase/video5_opus48_L2.mp4",
+          "L3": "assets/showcase/video5_opus48_L3.mp4"
+        },
+        "qwen38flash": {
+          "L1": "assets/showcase/video5_qwen38flash_L1.mp4",
+          "L2": "assets/showcase/video5_qwen38flash_L2.mp4",
+          "L3": "assets/showcase/video5_qwen38flash_L3.mp4"
+        },
+        "gpt56": {
+          "L1": "assets/showcase/video5_gpt56_L1.mp4",
+          "L2": "assets/showcase/video5_gpt56_L2.mp4",
+          "L3": "assets/showcase/video5_gpt56_L3.mp4"
+        },
+        "gemini31": {
+          "L1": "assets/showcase/video5_gemini31_L1.mp4",
+          "L2": "assets/showcase/video5_gemini31_L2.mp4",
+          "L3": "assets/showcase/video5_gemini31_L3.mp4"
+        }
+      }
+    }
+  ]
+}

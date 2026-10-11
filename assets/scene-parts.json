@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "compression": "gzip",
+  "bytes": 105639782,
+  "sha256": "d1dbf8b19d051f8f80f5576c07be16fd6e9b7bd5e4054137897c495118d740fe",
+  "part_bytes": 33554432,
+  "parts": [
+    {
+      "path": "scene-parts/part-000.bin",
+      "bytes": 33554432,
+      "sha256": "7cd09c76407c51bafb47f2daa06379300ac7c42b0a0619a4a12fef3ad8017b37"
+    },
+    {
+      "path": "scene-parts/part-001.bin",
+      "bytes": 33554432,
+      "sha256": "3dae051a540f141a378c0b91d174a91c5cfe72dc7f9618002b15fc4d75f730d7"
+    },
+    {
+      "path": "scene-parts/part-002.bin",
+      "bytes": 33554432,
+      "sha256": "078a785c647c56bb6cc3dcfcb24f8edf36cc2fb1f9bca478b10ded76529415de"
+    },
+    {
+      "path": "scene-parts/part-003.bin",
+      "bytes": 4976486,
+      "sha256": "ffd8e76a4b190db786e48e2da4c8c3c91b26a3333169176685d10c6332abcd93"
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+[
+  {
+    "key": "contact",
+    "clip": "video38_cp006",
+    "setting": "Simplified",
+    "statement": "In frame 46, Person B is in a low crouch with knees bent on the image-right side of Person A, beside Person A's extended feet, with the hand nearer the image-right supporting the body on the Dirt Road.",
+    "inspectTime": 1.9185833333333333,
+    "rows": [
+      {
+        "label": "Reference",
+        "src": "assets/showcase/contact_ref.mp4"
+      },
+      {
+        "label": "Opus 5.5",
+        "src": "assets/showcase/contact_opus55.mp4",
+        "score": 0.0
+      },
+      {
+        "label": "GPT-6 Astra",
+        "src": "assets/showcase/contact_gpt6.mp4",
+        "score": 1.0
+      }
+    ],
+    "entities": [
+      {
+        "name": "Person A",
+        "description": "Barefoot person seated left of center, with long light-colored hair, a beige patterned top, and a long white skirt.",
+        "first_frame": 0
+      },
+      {
+        "name": "Person B",
+        "description": "Person with short dark hair, a light-blue collared shirt, and brown trousers, crouching to Person A's image-right.",
+        "first_frame": 0
+      }
+    ]
+  },
+  {
+    "key": "steering",
+    "clip": "video30_cp005",
+    "setting": "Proxy",
+    "statement": "From frames 18 to 30, Person A continues turning the multi-button steering wheel counterclockwise past the nearly centered position, with the right grip rising and the left grip lowering.",
+    "inspectTime": 0,
+    "rows": [
+      {
+        "label": "Reference",
+        "src": "assets/showcase/steering_ref.mp4"
+      },
+      {
+        "label": "Opus 5.5",
+        "src": "assets/showcase/steering_opus55.mp4",
+        "score": 0.5
+      },
+      {
+        "label": "GPT-6 Astra",
+        "src": "assets/showcase/steering_gpt6.mp4",
+        "score": 0.0
+      }
+    ],
+    "entities": [
+      {
+        "name": "Person A",
+        "description": "Driver in the cockpit; only dark-blue-gloved hands and parts of the forearms are visible.",
+        "first_frame": 0
+      }
+    ]
+  },
+  {
+    "key": "landing",
+    "clip": "video46_cp002",
+    "setting": "Proxy",
+    "statement": "From frames 0 to 14, Person A descends from a posture with both feet off the ground and both arms spread to the sides; by the final segment, one foot lands on the stone surface, the other leg is bent upward, and the arms gradually draw toward the sides of the body.",
+    "inspectTime": 0.23333333333333334,
+    "rows": [
+      {
+        "label": "Reference",
+        "src": "assets/showcase/landing_ref.mp4"
+      },
+      {
+        "label": "Opus 5.5",
+        "src": "assets/showcase/landing_opus55.mp4",
+        "score": 0.0
+      },
+      {
+        "label": "GPT-6 Astra",
+        "src": "assets/showcase/landing_gpt6.mp4",
+        "score": 0.0
+      }
+    ],
+    "entities": [
+      {
+        "name": "Person A",
+        "description": "Hooded figure carrying a round shield and longbow, with a dark brown top and a long yellow-ochre waist cloth.",
+        "first_frame": 0
+      }
+    ]
+  },
+  {
+    "key": "placement",
+    "clip": "video10_cp004",
+    "setting": "Detailed",
+    "statement": "At frame 38, Person F's body is above the near end of the concrete median barrier, with the head higher than the surrounding vehicle roofs; Person H sits sideways at the barrier on Person F's image-left lower side and is partially occluded by Person F; Vehicle D is on the image-left side of the barrier, light-colored cars in the queue of vehicles in traffic congestion are on the other side, and the distant trees are on the right side of the image.",
+    "inspectTime": 1.5849166666666665,
+    "item_key": "L3:video10_cp004_r00066",
+    "rows": [
+      {
+        "label": "Reference",
+        "src": "assets/showcase/placement_ref.mp4"
+      },
+      {
+        "label": "Opus 5.5",
+        "src": "assets/showcase/placement_opus55.mp4",
+        "score": 0.5
+      },
+      {
+        "label": "GPT-6 Astra",
+        "src": "assets/showcase/placement_gpt6.mp4",
+        "score": 0.0
+      }
+    ],
+    "entities": [
+      {
+        "name": "Person F",
+        "description": "Man in a white shirt, red tie, and black trousers, moving toward the concrete median barrier.",
+        "first_frame": 0
+      },
+      {
+        "name": "Person H",
+        "description": "Woman with long dark hair and a purple sleeveless top, seated sideways on the median barrier.",
+        "first_frame": 0
+      },
+      {
+        "name": "Vehicle D",
+        "description": "Light grayish-white sedan behind Person F at the start; later at the lower left of the image.",
+        "first_frame": 0
+      }
+    ]
+  },
+  {
+    "key": "flowers",
+    "clip": "video44_cp006",
+    "setting": "Proxy",
+    "statement": "From frames 20 to 28, Person A rotates and widens the light brown paper in hand horizontally, causing a larger area of the brown paper surface to face the camera and unfold between Person A and Person B.",
+    "inspectTime": 1.1666666666666667,
+    "item_key": "L1:video44_cp006_r00065",
+    "rows": [
+      {
+        "label": "Reference",
+        "src": "assets/showcase/flowers_ref.mp4"
+      },
+      {
+        "label": "Opus 5.5",
+        "src": "assets/showcase/flowers_opus55.mp4",
+        "score": 1.0
+      },
+      {
+        "label": "GPT-6 Astra",
+        "src": "assets/showcase/flowers_gpt6.mp4",
+        "score": 0.0
+      }
+    ],
+    "entities": [
+      {
+        "name": "Person A",
+        "description": "Person on the image-right in a brown furry hat, glasses, and khaki clothes, carrying a camping backpack.",
+        "first_frame": 0
+      },
+      {
+        "name": "Person B",
+        "description": "Person on the image-left in a light pink dress and white stockings, with reddish-brown hair tied half-up.",
+        "first_frame": 0
+      }
+    ]
+  },
+  {
+    "key": "camera-roll",
+    "clip": "video12_cp007",
+    "setting": "Detailed",
+    "statement": "From frames 51 to 58, the camera continues rolling clockwise while maintaining a diagonally downward view of the teal stadium seating; in the image, the near edge of the green stadium turf changes from sloping down toward the right to sloping up toward the right.",
+    "inspectTime": 1.7017,
+    "item_key": "L3:video12_cp007_r00005",
+    "rows": [
+      {
+        "label": "Reference",
+        "src": "assets/showcase/camera_roll_ref.mp4"
+      },
+      {
+        "label": "Opus 5.5",
+        "src": "assets/showcase/camera_roll_opus55.mp4",
+        "score": 0.0
+      },
+      {
+        "label": "GPT-6 Astra",
+        "src": "assets/showcase/camera_roll_gpt6_high.mp4",
+        "score": 0.0
+      }
+    ],
+    "entities": []
+  }
+]

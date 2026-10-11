@@ -1,0 +1,64 @@
+{
+  "clip": "video38_cp006",
+  "setting": "Simplified",
+  "model": "Opus 5.5",
+  "fps": 23.976023976023978,
+  "checks": [
+    {
+      "category": "Object presence",
+      "frames": "0",
+      "startFrame": 0,
+      "statement": "Person A is clearly visible.",
+      "score": 1
+    },
+    {
+      "category": "Object presence",
+      "frames": "0",
+      "startFrame": 0,
+      "statement": "Person B is clearly visible.",
+      "score": 1
+    },
+    {
+      "category": "Object appearance",
+      "frames": "0",
+      "startFrame": 0,
+      "statement": "Person B has short dark hair and wears a light-blue short-sleeved collared shirt, brown trousers, and dark-brown shoes.",
+      "score": 1
+    },
+    {
+      "category": "Spatial relations",
+      "frames": "0",
+      "startFrame": 0,
+      "statement": "Person B is to the image-right of Person A, beside A's outstretched feet, with knees bent and torso leaning forward; both hands remain above the dirt road.",
+      "score": 1
+    },
+    {
+      "category": "Spatial relations",
+      "frames": "46",
+      "startFrame": 46,
+      "statement": "Person B crouches low to the image-right of Person A, beside A's outstretched feet, with the hand on the image-right supporting against the dirt road.",
+      "score": 0
+    },
+    {
+      "category": "Camera translation",
+      "frames": "0\u201346",
+      "startFrame": 0,
+      "statement": "The camera remains at a fixed position, with no visible horizontal or vertical translation.",
+      "score": 1
+    },
+    {
+      "category": "Shot transitions",
+      "frames": "0\u201346",
+      "startFrame": 0,
+      "statement": "The clip is a continuous shot with zero shot transitions.",
+      "score": 1
+    },
+    {
+      "category": "Action events",
+      "frames": "0\u201346",
+      "startFrame": 0,
+      "statement": "To the image-right of Person A, Person B continues bending the knees from a forward-leaning pose and lowers into a crouch. The hand on the image-right gradually reaches the dirt road and establishes support; the low crouch and hand-ground contact persist in the later part of the clip.",
+      "score": 0
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "scores": {
+    "Full": {
+      "Camera": 90.96626080550602,
+      "Static": 77.99119070042924,
+      "Dynamic": 60.86008876834399,
+      "Overall": 76.60584675809308
+    },
+    "No Refine": {
+      "Camera": 81.90714799300515,
+      "Static": 68.08344844585473,
+      "Dynamic": 49.23719650525352,
+      "Overall": 66.40926431470447
+    },
+    "Low Effort": {
+      "Camera": 69.08674199422923,
+      "Static": 53.302524585255476,
+      "Dynamic": 26.237770487709195,
+      "Overall": 49.54234568906463
+    }
+  },
+  "cases": [
+    {
+      "key": "city",
+      "title": "City streets",
+      "focus": "Signs & composition",
+      "description": "City streets · Detailed. Full preserves dense illuminated signs. No Refine changes the composition, while Low Effort omits much of the streetside signage.",
+      "thumbnail": "assets/showcase/ablation_city_thumb.jpg",
+      "videos": [
+        {
+          "label": "Reference",
+          "src": "assets/showcase/ablation_city_ref.mp4"
+        },
+        {
+          "label": "Full",
+          "src": "assets/showcase/ablation_city_opus55.mp4"
+        },
+        {
+          "label": "No Refine",
+          "src": "assets/showcase/ablation_city_opus55_no_refine.mp4"
+        },
+        {
+          "label": "Low Effort",
+          "src": "assets/showcase/ablation_city_opus55_low.mp4"
+        }
+      ],
+      "source_video": "video16",
+      "setting": "L3",
+      "start_seconds": 0.8,
+      "duration_seconds": 2.4
+    },
+    {
+      "key": "hotel",
+      "title": "The Grand Budapest Hotel",
+      "focus": "Characters & interior",
+      "description": "The Grand Budapest Hotel · Detailed. Compare character proportions, clothing and lobby details across the three configurations.",
+      "thumbnail": "assets/showcase/ablation_hotel_thumb.jpg",
+      "videos": [
+        {
+          "label": "Reference",
+          "src": "assets/showcase/ablation_hotel_ref.mp4"
+        },
+        {
+          "label": "Full",
+          "src": "assets/showcase/ablation_hotel_opus55.mp4"
+        },
+        {
+          "label": "No Refine",
+          "src": "assets/showcase/ablation_hotel_opus55_no_refine.mp4"
+        },
+        {
+          "label": "Low Effort",
+          "src": "assets/showcase/ablation_hotel_opus55_low.mp4"
+        }
+      ],
+      "source_video": "video9",
+      "setting": "L3",
+      "start_seconds": 2.7110416666666666,
+      "duration_seconds": 1.0844166666666666
+    },
+    {
+      "key": "f1",
+      "title": "F1 gameplay",
+      "focus": "Steering-wheel details",
+      "description": "F1 gameplay · Detailed. Full turns the wheel further, then back. No Refine rotates the display with the wheel, although the reference display stays fixed. Low Effort leaves the wheel nearly unchanged. Both variants miss fine steering-wheel details.",
+      "thumbnail": "assets/showcase/ablation_f1_thumb.jpg",
+      "videos": [
+        {
+          "label": "Reference",
+          "src": "assets/showcase/ablation_ref.mp4"
+        },
+        {
+          "label": "Full",
+          "src": "assets/showcase/ablation_opus55.mp4"
+        },
+        {
+          "label": "No Refine",
+          "src": "assets/showcase/ablation_opus55_no_refine.mp4"
+        },
+        {
+          "label": "Low Effort",
+          "src": "assets/showcase/ablation_opus55_low.mp4"
+        }
+      ]
+    }
+  ]
+}

@@ -295,8 +295,19 @@ select,.results-toolbar label,.results-toolbar>a,.gallery-selector .case-jump,.g
  html{scroll-padding-top:100px}
 }
 
-/* Inline citation at the end of the page. */
-#citation .citation-content{min-height:56px;margin:0;white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.7 ui-monospace,SFMono-Regular,Consolas,monospace}
+/* A quiet, readable citation panel with one direct copy action. */
+#citation .citation-panel{background:#f5f6f8;border:1px solid #e2e5e9;border-radius:8px;padding:14px 20px 20px}
+#citation .citation-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px;color:#68717e;font-size:13px;font-weight:500}
+#citation .citation-copy{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-width:94px;min-height:34px;padding:6px 11px;border:1px solid #d3d9e1;border-radius:5px;background:#fff;color:#3e4959;font-size:13px;font-weight:500;line-height:20px;cursor:pointer}
+#citation .citation-copy:hover{background:#edf0f4;border-color:#b8c2d0}
+#citation .citation-copy:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+#citation .citation-copy:disabled{cursor:wait}
+#citation .citation-copy svg{width:16px;height:16px;flex-shrink:0}
+#citation .copied-icon,#citation .citation-copy.is-copied .copy-icon{display:none}
+#citation .citation-copy.is-copied .copied-icon{display:block}
+#citation .citation-copy.is-copied{color:#316149;border-color:#b8cbbc;background:#f5faf6}
+#citation .citation-content{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.7 ui-monospace,SFMono-Regular,Consolas,monospace;color:#303946;tab-size:2}
+@media(max-width:600px){#citation .citation-panel{padding:12px 14px 16px}#citation .citation-toolbar{margin-bottom:10px}}
 
 /* Vector icons avoid font baselines and browser button padding. */
 .play,.comparison-play{display:grid;place-items:center;padding:0;line-height:1;appearance:none}
